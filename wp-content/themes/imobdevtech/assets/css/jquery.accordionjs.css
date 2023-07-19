@@ -1,0 +1,125 @@
+.accordionjs, .accordionjs * {
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+
+/*
+** The main <UL> element holding the tabs.
+*/
+.accordionjs {
+    margin: 0 auto;
+    padding: 0;
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+}
+
+.accordionjs > li {
+    background-color: #fff;
+    margin-right: -1190px;
+    margin-bottom: 0px;
+    padding-left: 1px;
+}
+
+.accordionjs-select {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+/* BEGIN accordionjs-title rules */
+.accordionjs-title {
+
+}
+
+.accordionjs-title span {
+    display: block;
+    position: absolute;
+    top:  30px;
+    width: 100%;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    line-height: 40px;
+    /* Slider effect */
+    transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+.accordionjs-title i {
+    margin-right:10px;
+    font-size:18px;
+}
+/* END accordionjs-title rules */
+
+/* BEGIN accordionjs-content rules */
+.accordionjs-content {
+    background-color: #191919;
+    color: #333;
+    height: 500px;
+    width: 1104px;
+    padding: 30px;
+    position: relative;
+    overflow: auto;
+    border-right: 5px solid #fff;
+}
+/* END accordionjs-content rules */
+
+.accordionjs > li,
+.accordionjs-title,
+.accordionjs-content,
+.accordionjs-separator {
+    float: left;
+}
+
+
+.accordionjs-select:checked ~ .accordionjs-separator {
+    margin-right: 1200px;
+    margin-bottom: 0px;
+}
+
+.accordionjs-title, .accordionjs-select{
+    width: 60px;
+    height: 500px;
+    color: #fff;
+}
+.accordionjs-select ~ .accordionjs-title{
+    background-color: #F5F5F5;
+    color: #191919;
+}
+
+/* Dark-Blue colour for currently active steps. */
+.accordionjs-select:hover ~ .accordionjs-title, .accordionjs-select:checked ~ .accordionjs-title {
+    background-color: #191919;
+    color: #fff;
+}
+
+/* Dark-Red colour for disabled steps. */
+.accordionjs-select:disabled ~ .accordionjs-title {
+    background-color: #942E2E;
+}
+
+.accordionjs-title, .accordionjs-select:checked ~ .accordionjs-content {
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.accordionjs > li, .accordionjs-title {
+    position: relative;
+}
+
+.accordionjs-separator {
+    transition: margin 0.3s ease 0.1s;
+    -o-transition: margin 0.3s ease 0.1s;
+    -moz-transition: margin 0.3s ease 0.1s;
+    -webkit-transition: margin 0.3s ease 0.1s;
+}
+

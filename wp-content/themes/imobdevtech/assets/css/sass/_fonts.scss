@@ -1,0 +1,78 @@
+$Poppins-Regular:Poppins-Regular;
+$Poppins-Medium:Poppins-Medium;
+$Poppins-SemiBold:Poppins-SemiBold;
+$Poppins-Bold:Poppins-Bold;
+
+@font-face {
+    font-family: $Poppins-Regular;
+    font-style: normal;
+    src: url(../../assets/fonts/Poppins-Regular.woff);
+}
+@font-face {
+    font-family: $Poppins-Medium;
+    font-style: normal;
+    src: url(../../assets/fonts/Poppins-Medium.woff);
+}
+@font-face {
+    font-family: $Poppins-SemiBold;
+    font-style: normal;
+    src: url(../../assets/fonts/Poppins-SemiBold.woff);
+}
+@font-face {
+    font-family: $Poppins-Bold;
+    font-style: normal;
+    src: url(../../assets/fonts/Poppins-Bold.woff);
+}
+@font-face {
+    font-family: 'asae';
+    src:  url('../../assets/fonts/asae.eot?rbdddo');
+    src:  url('../../assets/fonts/asae.eot?rbdddo#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/asae.ttf?rbdddo') format('truetype'),
+        url('../../assets/fonts/asae.woff?rbdddo') format('woff'),
+        url('../../assets/fonts/asae.svg?rbdddo#asae') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+i{
+    font-family: 'asae' !important;
+    font-size: 24px;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ai-ml-dev:before {
+    content: "\e900";
+}
+.icon-blockchain-dev:before {
+    content: "\e901";
+}
+.icon-devops-dev:before {
+    content: "\e902";
+}
+.icon-ecom-dev:before {
+    content: "\e903";
+}
+.icon-game-dev:before {
+    content: "\e904";
+}
+.icon-iot-dev:before {
+    content: "\e905";
+}
+.icon-mobile-dev:before {
+    content: "\e906";
+}
+.icon-salesforce-dev:before {
+    content: "\e907";
+}
+.icon-web-dev:before {
+    content: "\e908";
+}
